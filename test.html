@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang='ru'>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="ui/jquery-ui.theme.min.css">
+    <script src="misc/jquery-1.11.3.min.js"></script>
+    <script src="misc/jquery.once.js"></script>
+    <script src="misc/drupal.js"></script>
+    <script src="ui/jquery-ui.min.js"></script>
+    <script>
+    Drupal.behaviors.selectMenu = {
+        attach: function (context, settings) {
+            jQuery('select', context).selectmenu();
+        }
+    };
+    </script>
+</head>
+<body>
+
+
+<form style="margin: 50px auto; width: 300px;">
+    <select>
+        <option>123 это мой выбор!</option>
+        <option>321</option>
+    </select>
+    <input type="submit">
+</form>
